@@ -26,7 +26,7 @@ const initState = {
             price: 54,
             quantity: 1,
             ID: 2,
-            year: 2014,
+            year: 2001,
             icon: thinkgrow,
             isInCart: false
         },
@@ -37,7 +37,7 @@ const initState = {
             quantity: 1,
             ID: 3,
             icon: sherlock,
-            year: 2014,
+            year: 1994,
             isInCart: true
         },
         {
@@ -46,7 +46,7 @@ const initState = {
             price: 25,
             quantity: 1,
             ID: 4,
-            year: 2014,
+            year: 2017,
             icon: insearch,
             isInCart: false
         },
@@ -57,7 +57,7 @@ const initState = {
             quantity: 1,
             ID: 5,
             icon: thegreat,
-            year: 2014,
+            year: 2005,
             isInCart: true
         },
         {
@@ -66,7 +66,7 @@ const initState = {
             price: 28,
             quantity: 1,
             ID: 6,
-            year: 2014,
+            year: 2003,
             icon: alice,
             isInCart: false
         },
@@ -75,7 +75,7 @@ const initState = {
             author: "Chinua Achebe",
             price: 15,
             quantity: 1,
-            year: 2014,
+            year: 2012,
             ID: 7,
             icon: things,
             isInCart: false
@@ -85,7 +85,7 @@ const initState = {
             author: "Bell Hooks",
             price: 18,
             quantity: 1,
-            year: 2014,
+            year: 1945,
             ID: 8,
             icon: all,
             isInCart: false
