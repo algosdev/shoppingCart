@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+$dark: #333;
+$purple: #9B0D9E;
+$grey: #989898;
+$grey-bg: #ECECEC;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0.5em
+}
+img {
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 1em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+    .brand {
+        font-size: 2em;
+        font-weight: 600;
+        text-decoration: none;
+        color: $dark;
+        span {
+            color:$purple;
+        }
+    }
+    .icons {
+        button {
+            background: transparent;
+            border: 0;
+            outline: none;
+        }
+        display: flex;
+        .cart {
+            margin-right: 20px;
+            position: relative;
+            .quantity {
+                background: $purple;
+                color: #fff;
+                font-weight: 500;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                font-size: 14px;
+            }
+        }
+    }
+  }
+  .Toastify__toast--warning {
+      background: $purple !important;
+      color: #fff;
+  }
+  .title-cont {
+      margin-top: 0.5em;
+      text-align: center;
+      .title {
+          font-size: 1.8em;
+          font-weight: 600;
+      }
+      .info {
+          font-weight: 500;
+      }
+  }
+  .card-cont {
+      padding: 1em 0.4em;
+      display: grid;
+      justify-content: center;
+      width: 100%;
+      max-width: 1000px;
+      align-self: center;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 1em;
+  .card {
+      min-width: 280px;
+      max-width: 460px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      padding: 0.5em 1em;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      .details {
+          margin-left: 1em;
+          margin-top: 0.5em;
+          .title {
+              font-weight: 600;
+          }
+          .author {
+              color: $grey;
+              margin: 0.5em 0;
+          }
+          .year {
+            color: $grey;
+            margin: 0.5em 0 0.5em;
+        }
+          .price {
+              font-size: 1.5em;
+              font-weight: 600;
+          }
+          .btn {
+              border: 0;
+              border-radius: 5px 20px 20px 5px;
+              height: 32px;
+              padding-left: 0.5em;
+              width: 110px;
+              background: $purple;
+              color: #fff;
+              display: flex;
+              cursor: pointer;
+              align-items: center;
+              margin-top: 10px;
+              outline: 0;
+              span {
+                  font-size: 2em;
+                  margin-right: 5px;
+              }
+          }
+      }
+  }
+}
+.item-cont {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0.5em;
+    min-width: 300px;
+        max-width: 1000px;
+        width: 100%;
+    border-radius: 20px;
+    .item-info {
+        background: $grey-bg ;
+        font-weight:  600;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .total {
+        background: $grey-bg ;
+        font-weight:  600;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .item { 
+        .grid {
+            border-bottom: 0.5px solid $grey-bg;
+        }
+    }
+    .grid {
+        display: grid;
+        padding: 1em 0.5em;
+        grid-template-columns: 1fr 7fr 2fr 5fr;
+        min-width: 300px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        .title {
+            font-weight: 600;
+        }
+        .author {
+            color: $grey;
+        }
+        .num {
+            font-weight: 600;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            text-align: center;
+            p{
+                text-align: left;
+            }
+        }
+        .btns {
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+           grid-gap: 5px;
+            .quantity {
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                div {
+                    min-width: 28px;
+                    height: 28px;
+                    border-top: 0.5px solid $grey;
+                    border-bottom: 0.5px solid $grey;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                button {
+                    height: 28px;
+                    cursor: pointer;
+                    color: #fff;
+                    border: 0;
+                    outline: 0;
+                    font-size: 1.3em;
+                    width: 28px; 
+                    background: $purple;
+                    &:nth-of-type(1) {
+                        border-radius: 14px 0px 0px 14px;
+                    }
+                    &:nth-of-type(2) {
+                        border-radius: 0px 14px 14px 0px;
+                    }
+                }
+            }
+            .delete {
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                outline: none;
+                height: 28px;
+                width: 28px;
+            }
+        }
+    }
+}
+.none {
+    width: 100%;
+    padding: 2em;
+    font-weight: 600;
+    text-align: center;
+}
