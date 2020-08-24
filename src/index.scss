@@ -186,6 +186,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size:  1.2em;
         }
         div {
             text-align: center;
@@ -198,12 +199,12 @@ nav {
             grid-template-columns: 5fr 1fr;
            grid-gap: 5px;
             .quantity {
-                height: 28px;
+                height: 36px;
                 display: flex;
                 justify-content: center;
                 div {
-                    min-width: 28px;
-                    height: 28px;
+                    min-width: 32px;
+                    height: 36px;
                     border-top: 0.5px solid $grey;
                     border-bottom: 0.5px solid $grey;
                     display: flex;
@@ -211,13 +212,13 @@ nav {
                     align-items: center;
                 }
                 button {
-                    height: 28px;
+                    height: 36px;
                     cursor: pointer;
                     color: #fff;
                     border: 0;
                     outline: 0;
                     font-size: 1.3em;
-                    width: 28px; 
+                    width: 32px; 
                     background: $purple;
                     &:nth-of-type(1) {
                         border-radius: 14px 0px 0px 14px;
