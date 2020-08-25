@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 class AddBooks extends Component {
     constructor(props) {
         super(props)
-
         this.state = {
             title: null,
             author: null,
@@ -29,7 +28,16 @@ class AddBooks extends Component {
     submitHandler = (e) => {
         e.preventDefault();
         let state = this.state
-        this.props.addNew(state.title, state.author, state.year, state.price, state.cover)
+        let g = Object.values(this.state);
+        console.log(g)
+        g.forEach(el => {
+            if (el !== null) {
+                this.props.addNew(...g)
+            }
+            else {
+
+            }
+        })
     }
     render() {
         return (
@@ -53,7 +61,6 @@ class AddBooks extends Component {
                     <input onChange={this.fileHandler} id='cover' type='file' accept="image/*" placeholder='Cover image' />
                     <button type='submit'>Submit</button>
                 </form>
-                <img src={this.state.cover} alt="" />
             </div>
         )
     }

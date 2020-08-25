@@ -7,7 +7,8 @@ class Login extends Component {
         this.state = {
             username: null,
             password: null,
-            redirect: false
+            redirect: false,
+            error: null
         }
     }
     changeHandler = (e) => {
@@ -19,13 +20,19 @@ class Login extends Component {
         e.preventDefault();
         if (this.state.username === 'algo#' && this.state.password === "8252020") {
             this.setState({
-                redirect: true
+                redirect: true,
+                error: null
+            })
+        }
+        else {
+            this.setState({
+                error: 'Incorrect username or password'
             })
         }
     }
     render() {
         if (this.state.redirect) {
-            return <Redirect to={this.state.redirect} />
+            return <Redirect to='/addnewbook' />
         }
         else {
             return (
@@ -37,6 +44,7 @@ class Login extends Component {
                     <form onSubmit={this.submitHandler}>
                         <input onChange={this.changeHandler} id='username' type='text' placeholder='Username' />
                         <input onChange={this.changeHandler} id='password' type='password' placeholder='Password' />
+                        <span className='error'>{this.state.error}</span>
                         <button type='submit'>Submit</button>
                     </form>
                 </div>
