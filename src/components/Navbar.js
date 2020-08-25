@@ -7,7 +7,7 @@ toast.configure()
 const Navbar = ({ items }) => {
     let count = 0;
     const notify = () => {
-        toast.warning('Algo is working on this feature', { position: toast.POSITION.TOP_CENTER })
+        // toast.warning('Algo is working on this feature', { position: toast.POSITION.TOP_CENTER })
 
         console.log('sdasd')
     }
@@ -36,7 +36,7 @@ const Navbar = ({ items }) => {
                         </Link>
                     </div>
                     <div>
-                        <Link to='/admin'>
+                        <Link to='/login'>
                             <button onClick={notify}>
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.1209 10.5328C14.0295 10.5328 16.3873 8.17497 16.3873 5.26641C16.3873 2.35785 14.0295 0 11.1209 0C8.21235 0 5.85449 2.35785 5.85449 5.26641C5.85449 8.17497 8.21235 10.5328 11.1209 10.5328Z" fill="#333333" />

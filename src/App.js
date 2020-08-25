@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Collection from './components/Collection';
 import ShopCart from './components/ShopCart';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Login from './components/Login';
+import AddBooks from './components/AddBook';
 class App extends Component {
   render() {
     return (
@@ -11,6 +13,8 @@ class App extends Component {
           <Navbar />
           <Route exact path='/' component={Collection} />
           <Route path='/cart' component={ShopCart} />
+          <Route path='/login' component={Login} />
+          <Route path='/add' component={AddBooks} />
         </div>
       </BrowserRouter>
     );

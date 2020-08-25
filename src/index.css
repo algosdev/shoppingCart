@@ -148,6 +148,11 @@ nav .icons .cart .quantity {
   border-radius: 20px;
 }
 
+.card-cont .card img {
+  width: 140px;
+  height: 170px;
+}
+
 .card-cont .card .details {
   margin-left: 1em;
   margin-top: 0.5em;
@@ -332,5 +337,71 @@ nav .icons .cart .quantity {
   padding: 2em;
   font-weight: 600;
   text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+form input, form button, form label {
+  background: #FFFFFF;
+  border: 1px solid #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  height: 36px;
+  margin: 5px 0;
+  padding: 0 10px;
+  outline: 0;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 280px;
+}
+
+form button {
+  background: #9B0D9E;
+  border: 0;
+  cursor: pointer;
+  color: #fff !important;
+  width: auto;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+form button a {
+  color: #fff;
+}
+
+form input[type="file"] {
+  display: none;
+}
+
+form .custom-file-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  background: #9B0D9E;
+  color: #fff;
+  border: 0;
+  padding: 0 1em;
 }
 /*# sourceMappingURL=index.css.map */
